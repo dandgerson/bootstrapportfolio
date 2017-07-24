@@ -44,3 +44,14 @@ h4 {
 h2 {
 	color: $color-text-second;
 }
+
+.logo {
+	svg {
+		// border: 2px solid $color-bg-second;
+		border-radius: 10px;
+		background: $color-bg-second;
+		path {
+			fill: $color-bg-first;
+		}
+	}
+}

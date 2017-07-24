@@ -141,7 +141,12 @@ h4 {
 	_base.scss
 	-------------------------------------------------------- */
 .logo {
-  margin-top: 2.8rem;
+  margin-top: 1rem;
+}
+
+.logo svg {
+  height: 120px;
+  width: 120px;
 }
 
 .main-img {
@@ -207,6 +212,16 @@ h4 {
 
 h2 {
   color: #7E60AA;
+}
+
+.logo svg {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #312160;
+}
+
+.logo svg path {
+  fill: #DECAE6;
 }
 
 /* --------------------------------------------------------

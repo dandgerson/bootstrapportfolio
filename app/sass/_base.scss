@@ -2,7 +2,11 @@
 // to learn more about SASS, visit sass-lang.com
 
 .logo {
-	margin-top: 2.8rem;
+	margin-top: 1rem;
+	svg {
+		height: 120px;
+		width: 120px;
+	}
 }
 
 .main-img {
