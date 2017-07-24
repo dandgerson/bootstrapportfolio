@@ -1,0 +1,16 @@
+/* TYPE BEGIN */
+// @include font-face("Lato", "../type/lato/Lato", $file-formats: eot svg ttf woff);
+
+$lato-hairline: "Lato-Hairline", sans-serif;
+$lato-light: "Lato-Light", sans-serif;
+$lato-regular: "Lato-Regular", sans-serif;
+$lato-bold: "Lato-Bold", sans-serif;
+
+@include font-face("Lato-Hairline", "../type/lato/Lato-Hairline", $file-formats: ttf);
+
+@include font-face("Lato-Light", "../type/lato/Lato-Light", $file-formats: ttf);
+
+@include font-face("Lato-Regular", "../type/lato/Lato-Regular", $file-formats: ttf);
+
+@include font-face("Lato-Bold", "../type/lato/Lato-Bold", $file-formats: ttf);
+/* TYPE END */

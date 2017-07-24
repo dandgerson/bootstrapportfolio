@@ -1,0 +1,46 @@
+@import "bourbon";
+
+// color theme
+$color-text-main: #312160;
+$color-text-second: #7E60AA;
+$color-accent: #F8981C;
+$color-bg-main: #A46FB5;
+$color-bg-first: #DECAE6;
+$color-bg-second: #312160;
+
+body {
+	background: $color-bg-main;
+}
+
+.container {
+	background: $color-bg-first;
+}
+
+hr {
+	background: $color-bg-second;
+}
+
+a {
+	&:link {
+		color: $color-text-main;
+	}
+	&:visited {
+		color: $color-text-second;
+	}
+	&:hover {
+		color: $color-accent;
+	}
+	&:active {
+		color: $color-accent;
+	}
+}
+
+h1,
+h3,
+h4 {
+	color: $color-text-main;
+}
+
+h2 {
+	color: $color-text-second;
+}

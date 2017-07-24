@@ -1,17 +1,33 @@
 $(document).ready(function(){
-	$("#form").submit(function(e) { 
-	e.preventDefault();
-	//устанавливаем событие отправки для формы с id=form
-	var form_data = $(this).serialize(); //собераем все данные из формы
-	$.ajax({
-		type: "POST", //Метод отправки
-		url: "email.php", //путь до php фаила отправителя
-		data: form_data,
-		success: function() { //код в этом блоке выполняется при успешной отправке сообщения
 
-		$('#emailModal').modal('hide');
-		// alert("Ваше сообщение отправлено!");
+	// $(".owl-carousel").owlCarousel();
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+		loop:true,
+		nav:true,
+		// margin:10,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			960:{
+				items:5
+			},
+			1200:{
+				items:5
 			}
-		});
+		}
 	});
-}); 
+	owl.on('mousewheel', '.owl-stage', function (e) {
+		if (e.deltaY > 0) {
+			owl.trigger('next.owl');
+		} else {
+			owl.trigger('prev.owl');
+		}
+		e.preventDefault();
+	});
+
+});

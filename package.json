@@ -30,6 +30,7 @@
     "gulp-uglifyjs": "^0.6.2",
     "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^5.0.0",
+    "node-bourbon": "^4.2.8",
     "vinyl-ftp": "^0.6.0"
   }
 }

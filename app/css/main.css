@@ -1,12 +1,228 @@
+/* --------------------------------------------------------
+	Bourbon Mixins
+	-------------------------------------------------------- */
+/* --------------------------------------------------------
+	_fonts.scss
+	-------------------------------------------------------- */
+/* TYPE BEGIN */
+@font-face {
+  font-family: "Lato-Hairline";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../type/lato/Lato-Hairline.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../type/lato/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../type/lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../type/lato/Lato-Bold.ttf") format("truetype");
+}
+
+/* TYPE END */
+/* --------------------------------------------------------
+	_variables.scss
+	-------------------------------------------------------- */
+/* Hello, I'm here :) */
+/* --------------------------------------------------------
+	_functions.scss
+	-------------------------------------------------------- */
+/* --------------------------------------------------------
+	_mixins.scss
+	-------------------------------------------------------- */
+/* --------------------------------------------------------
+	_settings.scss
+	-------------------------------------------------------- */
+* {
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 16px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 0;
+  margin-top: 1.4rem;
+  border: 0;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  height: 5px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Lato-Hairline", sans-serif;
+  font-size: 3.6rem;
+  margin-top: 3.2rem;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Lato-Regular", sans-serif;
+}
+
+h1,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 2.3rem;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+/* --------------------------------------------------------
+	_components.scss
+	-------------------------------------------------------- */
+.owl-container {
+  margin: 0 -15px 0 -15px;
+}
+
+.carousel-item {
+  margin-top: 1.2rem;
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------
+	_base.scss
+	-------------------------------------------------------- */
+.logo {
+  margin-top: 2.8rem;
+}
+
+.main-img {
+  margin-top: 2.1rem;
+}
+
+.portfolio-content {
+  margin-top: 1.2rem;
+}
+
+.social ul,
+.social li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.social a {
+  display: block;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+}
+
+.footer {
+  margin-top: 2.3rem;
+}
+
+/* --------------------------------------------------------
+	Theme
+	-------------------------------------------------------- */
+body {
+  background: #A46FB5;
+}
+
+.container {
+  background: #DECAE6;
+}
+
+hr {
+  background: #312160;
+}
+
+a:link {
+  color: #312160;
+}
+
+a:visited {
+  color: #7E60AA;
+}
+
+a:hover {
+  color: #F8981C;
+}
+
+a:active {
+  color: #F8981C;
+}
+
+h1,
+h3,
+h4 {
+  color: #312160;
+}
+
+h2 {
+  color: #7E60AA;
+}
+
+/* --------------------------------------------------------
+	_media.scss
+	-------------------------------------------------------- */
 /*==========  Desktop First Method  ==========*/
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
+/* Extra Large Devices, Wide Screens */
+/* Large Devices, Desktops */
+/* Medium Devices, Tablets */
+/* Small Devices, Phones */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
+/* Medium Devices, Tablets */
+/* Large Devices, Desktops */
+/* Extra Large Devices, Wide Screens */

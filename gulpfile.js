@@ -16,7 +16,7 @@
 
 gulp.task('sass', function(){
 	return gulp.src(['app/sass/**/*.sass', 'app/sass/**/*.scss'])
-	.pipe(sass().on('error', sass.logError))
+	.pipe(sass({outputStyle: 'expanded',includePaths: require('node-bourbon').includePaths}).on('error', sass.logError))
 	.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true }))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}))
@@ -36,7 +36,9 @@ gulp.task('scripts', function() {
 		'app/bower/jquery/dist/jquery.js',
 		'app/bower/tether/dist/js/tether.js',
 		'app/bower/bootstrap/dist/js/bootstrap.js',
-	])
+		'app/bower/owl.carousel/dist/owl.carousel.min.js',
+		'app/bower/jquery-mousewheel/jquery.mousewheel.min.js'
+		])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('app/js'));
@@ -94,9 +96,9 @@ gulp.task('build',['clean', 'img', 'sass','scripts'], function() {
 gulp.task('deploy', function() {
 
 	var conn = ftp.create({
-		host:      'host',
-		user:      'user',
-		password:  'password',
+		host:      '...',
+		user:      '...',
+		password:  '...',
 		parallel:  10,
 		log: gutil.log
 	});
