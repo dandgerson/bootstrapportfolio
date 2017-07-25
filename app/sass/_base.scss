@@ -10,11 +10,11 @@
 }
 
 header .social {
-	ul,
-	li {
+	ul, li {
 		list-style-type: none;
 		display: inline-block;
 	}
+	
 	a {
 		display: block;
 		margin: 0.2rem 0 0 0.5rem;
@@ -27,8 +27,22 @@ header .social {
 	margin: 2.1rem -15px 0 -15px;
 }
 
+.jumbotron {
+	hr {
+		height: 2px;
+	}
+
+	.jumbotron-control a {
+		margin-right: 0.4rem;
+	}
+}
+
+
+
+
 .portfolio-content {
 	margin-top: 1.2rem;
+
 	img {
 		border-radius: 5px;
 	}
@@ -39,11 +53,11 @@ header .social {
 }
 
 .social {
-	ul,
-	li {
+	ul, li {
 		list-style-type: none;
 		display: inline-block;
 	}
+
 	a {
 		display: block;
 		margin-left: 0.5rem;
@@ -54,12 +68,15 @@ header .social {
 .footer {
 	margin: 2.3rem -15px 0 -15px;
 	padding: 0 15px 0 15px;
+
 	.contacts {
 		padding: 1rem 0 0 0;
 	}
+
 	ul, li {
 		list-style-type: none;
 	}
+
 	.copyrigth {
 		padding: 1rem 0 0 0;
 	}

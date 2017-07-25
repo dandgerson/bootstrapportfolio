@@ -157,8 +157,7 @@ h4 {
   width: 120px;
 }
 
-header .social ul,
-header .social li {
+header .social ul, header .social li {
   list-style-type: none;
   display: inline-block;
 }
@@ -174,6 +173,14 @@ header .social a {
   margin: 2.1rem -15px 0 -15px;
 }
 
+.jumbotron hr {
+  height: 2px;
+}
+
+.jumbotron .jumbotron-control a {
+  margin-right: 0.4rem;
+}
+
 .portfolio-content {
   margin-top: 1.2rem;
 }
@@ -187,8 +194,7 @@ header .social a {
   text-indent: 2rem;
 }
 
-.social ul,
-.social li {
+.social ul, .social li {
   list-style-type: none;
   display: inline-block;
 }
