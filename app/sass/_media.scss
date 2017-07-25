@@ -2,31 +2,175 @@
 
 /* Extra Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.header {
+		h1 {
+			font-size: 3.2rem;
+			margin-top: 1.5rem;
+		}
+	}
 }
 
 /* Large Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.header {
+		h1 {
+			font-size: 3.2rem;
+			margin-top: 1.5rem;
+		}
+	}
 }
 
 /* Medium Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.header {
+		h1 {
+			font-size: 3.2rem;
+			margin-top: 1.5rem;
+		}
+	}
 }
 
 /* Small Devices, Phones */
 @media only screen and (max-width : 576px) {
-
+	.header {
+		h1 {
+			font-size: 2.8rem;
+			margin-top: 1.5rem;
+		}
+		h4 {
+			font-size: 1.2rem;
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.header {
+		.social a {
+			margin: 0.2rem 0 0 0.3rem
+		}
 
+		h1 {
+			font-family: $lato-light;
+			font-size: 1.8rem;
+			margin-top: 1.5rem;
+		}
+
+		h4 {
+			font-size: 1rem;
+		}
+
+		hr {
+			margin-top: 1rem;
+		}
+	}
+
+	hr {
+		height: 3px;
+	}
+
+	.jumbotron-control a:nth-child(1) {
+		margin-bottom: 1rem;
+	}
+
+	.portfolio {
+		h2:nth-child(1) {
+			margin-top: 0;
+		}
+		.portfolio-text {
+			margin-bottom: 2rem;
+			h3 {
+				font-size: 2rem;
+				margin-top: 0.5rem;
+				margin-bottom: 0.2rem;
+			}
+
+		}
+	}
+
+	.owl-theme .owl-dots {
+		margin-top: 1rem;
+	}
+
+	.footer {
+		margin: 1rem -15px 0 -15px;
+		li, li a {
+			font-size: 1rem;
+		}
+		.social li a {
+			font-size: 1.6rem;
+		}
+
+	}
+
+	footer .copyrigth p {
+		font-size: 1rem;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.header {
+		.social a {
+			margin: 0.2rem 0 0 0.3rem
+		}
+
+		h1 {
+			font-family: $lato-light;
+			font-size: 1.8rem;
+			margin-top: 1.5rem;
+		}
+
+		h4 {
+			font-size: 1rem;
+		}
+
+		hr {
+			margin-top: 1rem;
+		}
+	}
+
+	hr {
+		height: 3px;
+	}
+
+	.jumbotron-control a:nth-child(1) {
+		margin-bottom: 1rem;
+	}
+
+	.portfolio {
+		h2:nth-child(1) {
+			margin-top: 0;
+		}
+		.portfolio-text {
+			margin-bottom: 2rem;
+			h3 {
+				font-size: 2rem;
+				margin-top: 0.5rem;
+				margin-bottom: 0.2rem;
+			}
+
+		}
+	}
+
+	.owl-theme .owl-dots {
+		margin-top: 1rem;
+	}
+
+	.footer {
+		margin: 1rem -15px 0 -15px;
+		li, li a {
+			font-size: 0.8rem;
+		}
+		.social li a {
+			font-size: 1.5rem;
+		}
+
+	}
+
+	footer .copyrigth p {
+		font-size: 0.8rem;
+	}
 
 }
 
@@ -35,6 +179,7 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
 
 }
 

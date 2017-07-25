@@ -9,12 +9,33 @@
 	}
 }
 
+header .social {
+	ul,
+	li {
+		list-style-type: none;
+		display: inline-block;
+	}
+	a {
+		display: block;
+		margin: 0.2rem 0 0 0.5rem;
+		font-size: 1.2rem;
+	}
+}
+
 .main-img {
 	margin-top: 2.1rem;
+	margin: 2.1rem -15px 0 -15px;
 }
 
 .portfolio-content {
 	margin-top: 1.2rem;
+	img {
+		border-radius: 5px;
+	}
+}
+
+.modal-body p {
+	text-indent: 2rem;
 }
 
 .social {
@@ -31,5 +52,15 @@
 }
 
 .footer {
-	margin-top: 2.3rem;
+	margin: 2.3rem -15px 0 -15px;
+	padding: 0 15px 0 15px;
+	.contacts {
+		padding: 1rem 0 0 0;
+	}
+	ul, li {
+		list-style-type: none;
+	}
+	.copyrigth {
+		padding: 1rem 0 0 0;
+	}
 }

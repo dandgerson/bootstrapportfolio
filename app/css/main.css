@@ -55,14 +55,15 @@
 ul, li {
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 
 hr {
   margin: 0;
   margin-top: 1.4rem;
   border: 0;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   height: 5px;
 }
 
@@ -76,6 +77,8 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 a:active {
@@ -137,6 +140,11 @@ h4 {
   text-align: center;
 }
 
+.carousel-item img {
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
 /* --------------------------------------------------------
 	_base.scss
 	-------------------------------------------------------- */
@@ -149,12 +157,34 @@ h4 {
   width: 120px;
 }
 
+header .social ul,
+header .social li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+header .social a {
+  display: block;
+  margin: 0.2rem 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
 .main-img {
   margin-top: 2.1rem;
+  margin: 2.1rem -15px 0 -15px;
 }
 
 .portfolio-content {
   margin-top: 1.2rem;
+}
+
+.portfolio-content img {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.modal-body p {
+  text-indent: 2rem;
 }
 
 .social ul,
@@ -170,7 +200,20 @@ h4 {
 }
 
 .footer {
-  margin-top: 2.3rem;
+  margin: 2.3rem -15px 0 -15px;
+  padding: 0 15px 0 15px;
+}
+
+.footer .contacts {
+  padding: 1rem 0 0 0;
+}
+
+.footer ul, .footer li {
+  list-style-type: none;
+}
+
+.footer .copyrigth {
+  padding: 1rem 0 0 0;
 }
 
 /* --------------------------------------------------------
@@ -178,6 +221,7 @@ h4 {
 	-------------------------------------------------------- */
 body {
   background: #A46FB5;
+  color: #312160;
 }
 
 .container {
@@ -189,7 +233,7 @@ hr {
 }
 
 a:link {
-  color: #312160;
+  color: #7E60AA;
 }
 
 a:visited {
@@ -214,6 +258,23 @@ h2 {
   color: #7E60AA;
 }
 
+.blockquote, .blockquote-reverse {
+  color: #7E60AA;
+  margin-top: 1rem;
+}
+
+.blockquote-footer {
+  color: #312160;
+}
+
+.blockquote {
+  border-left: 0.25rem solid #7E60AA;
+}
+
+.blockquote-reverse {
+  border-right: 0.25rem solid #7E60AA;
+}
+
 .logo svg {
   -webkit-border-radius: 10px;
           border-radius: 10px;
@@ -224,16 +285,229 @@ h2 {
   fill: #DECAE6;
 }
 
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper .portfolio-btn {
+  position: absolute;
+}
+
+.img-wrapper::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(164, 111, 181, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.img-wrapper:hover::before {
+  background-color: transparent;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.owl-container .owl-theme .owl-nav .owl-prev, .owl-container .owl-theme .owl-nav .owl-next {
+  background-color: #7E60AA;
+}
+
+.owl-container .owl-theme .owl-nav .owl-prev:hover, .owl-container .owl-theme .owl-nav .owl-next:hover {
+  background-color: #312160;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #7E60AA;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btn-outline-main {
+  color: #7E60AA;
+  background-image: none;
+  background-color: transparent;
+  border-color: #7E60AA;
+}
+
+.btn-outline-main:hover {
+  color: #fff;
+  background-color: #7E60AA;
+  border-color: #7E60AA;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.btn-outline-main:focus, .btn-outline-main.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+  box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+}
+
+.btn-outline-main.disabled, .btn-outline-main:disabled {
+  color: #7E60AA;
+  background-color: transparent;
+}
+
+.btn-outline-main:active, .btn-outline-main.active,
+.show > .btn-outline-main.dropdown-toggle {
+  color: #fff;
+  background-color: #7E60AA;
+  border-color: #7E60AA;
+}
+
+.footer {
+  background-color: #312160;
+  color: #7E60AA;
+}
+
 /* --------------------------------------------------------
 	_media.scss
 	-------------------------------------------------------- */
 /*==========  Desktop First Method  ==========*/
 /* Extra Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .header h1 {
+    font-size: 3.2rem;
+    margin-top: 1.5rem;
+  }
+}
+
 /* Large Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .header h1 {
+    font-size: 3.2rem;
+    margin-top: 1.5rem;
+  }
+}
+
 /* Medium Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 3.2rem;
+    margin-top: 1.5rem;
+  }
+}
+
 /* Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  .header h1 {
+    font-size: 2.8rem;
+    margin-top: 1.5rem;
+  }
+  .header h4 {
+    font-size: 1.2rem;
+  }
+}
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header .social a {
+    margin: 0.2rem 0 0 0.3rem;
+  }
+  .header h1 {
+    font-family: "Lato-Light", sans-serif;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+  .header h4 {
+    font-size: 1rem;
+  }
+  .header hr {
+    margin-top: 1rem;
+  }
+  hr {
+    height: 3px;
+  }
+  .jumbotron-control a:nth-child(1) {
+    margin-bottom: 1rem;
+  }
+  .portfolio h2:nth-child(1) {
+    margin-top: 0;
+  }
+  .portfolio .portfolio-text {
+    margin-bottom: 2rem;
+  }
+  .portfolio .portfolio-text h3 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+  .owl-theme .owl-dots {
+    margin-top: 1rem;
+  }
+  .footer {
+    margin: 1rem -15px 0 -15px;
+  }
+  .footer li, .footer li a {
+    font-size: 1rem;
+  }
+  .footer .social li a {
+    font-size: 1.6rem;
+  }
+  footer .copyrigth p {
+    font-size: 1rem;
+  }
+}
+
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .header .social a {
+    margin: 0.2rem 0 0 0.3rem;
+  }
+  .header h1 {
+    font-family: "Lato-Light", sans-serif;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+  .header h4 {
+    font-size: 1rem;
+  }
+  .header hr {
+    margin-top: 1rem;
+  }
+  hr {
+    height: 3px;
+  }
+  .jumbotron-control a:nth-child(1) {
+    margin-bottom: 1rem;
+  }
+  .portfolio h2:nth-child(1) {
+    margin-top: 0;
+  }
+  .portfolio .portfolio-text {
+    margin-bottom: 2rem;
+  }
+  .portfolio .portfolio-text h3 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+  .owl-theme .owl-dots {
+    margin-top: 1rem;
+  }
+  .footer {
+    margin: 1rem -15px 0 -15px;
+  }
+  .footer li, .footer li a {
+    font-size: 0.8rem;
+  }
+  .footer .social li a {
+    font-size: 1.5rem;
+  }
+  footer .copyrigth p {
+    font-size: 0.8rem;
+  }
+}
+
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
