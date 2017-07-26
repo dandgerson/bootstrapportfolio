@@ -50,7 +50,6 @@
 		<header class="header">
 			<div class="row">
 				<div class="col-5 d-flex flex-column flex-wrap justify-content-center align-items-start">
-					<!-- <img class="img-fluid logo" src="http://via.placeholder.com/115x115"> -->
 
 					<div class="logo">
 
@@ -102,10 +101,10 @@
 						<hr class="my-4">
 						<p>Hello, I’m Dmitry Anderson. Frontend developer, designer and lifelong learner.</p>
 						<p>I bring the rigor. Five years of experience as an industrial automation engineer programming industrial utilities and HVAC for the FDA regulated pharmaceutical industry have taught me the value of deeply understanding my code and doing it right the first time. I bring this mentality to web development as well.</p>
-						<p class="lead jumbotron-control">
-							<a class="btn btn-outline-main btn-lg" data-toggle="modal" data-target="#modalAbout" href="#" role="button">Learn more</a>
-							<a class="btn btn-outline-main btn-lg" data-toggle="modal" data-target="#modalHire" href="#" role="button">Hire me for a project</a>
-						</p>
+						<div class="jumbotron-control">
+							<button class="btn btn-outline-main btn-lg" data-toggle="modal" data-target="#modalAbout" href="#" role="button">Learn more</button>
+							<button class="btn btn-main btn-lg" data-toggle="modal" data-target="#modalHire" href="#" role="button">Hire me for a project</button>
+						</div>
 
 						<!-- Modal About-->
 						<div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -141,161 +140,178 @@
 									</div>
 									<div class="modal-body">
 										<img class="img-fluid" src="https://placebear.com/g/820/640">
-										<h3>Work Title</h3>
-										<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis, officiis aliquid earum ipsa omnis ducimus laborum vero rem porro dignissimos eveniet molestiae aliquam in similique. Soluta eligendi reiciendis fugiat officia iste iusto quidem doloribus quod dolore at, ipsum quisquam ea temporibus architecto nemo quo exercitationem corrupti fuga. Delectus fugiat optio cumque adipisci, ab omnis quia facilis! Minus porro consequuntur commodi soluta dignissimos laboriosam deleniti! Impedit quasi totam quas numquam vero molestias sed, ad corrupti, culpa, sunt sapiente, quo sit obcaecati.</p>
+										<h3>Hire me for your project</h3>
+										<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis.</p>
 									</div>
-										<!-- <div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Save changes</button>
-										</div> -->
+									<form>
+										<div class="form-group">
+											<label for="exampleInputEmail1">Email address</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+											<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+										</div>
+
+										<div class="form-group">
+											<label for="exampleTextarea">Input your message</label>
+											<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+										</div>
+										<div class="form-group">
+											<label for="exampleInputFile">Project File input</label>
+											<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+											<small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+										</div>
+										
+										
+										<!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+									</form>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-main" data-dismiss="modal">Submit message</button>
+										<!-- <button type="button" class="btn btn-outline-main" data-dismiss="modal">Close</button> -->
 									</div>
 								</div>
 							</div>
-
 						</div>
+
 					</div>
-				</div>
-			</section>
-
-			<section class="portfolio">
-				<div class="row">
-					<div class="col">
-						<h2>Feature Work</h2>
-					</div>
-				</div>
-				<div class="portfolio-content">
-					<div class="row text-center">
-						<div class="col-sm-4">
-
-							<div class="img-wrapper d-flex justify-content-center align-items-center" >
-								<button type="button" class="btn btn-outline-main portfolio-btn" data-toggle="modal" data-target="#modalWork1">Look</button>
-								<!-- Modal -->
-								<div class="modal fade" id="modalWork1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<img class="img-fluid" src="https://placebear.com/g/820/640">
-												<h3>Work Title</h3>
-												<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis, officiis aliquid earum ipsa omnis ducimus laborum vero rem porro dignissimos eveniet molestiae aliquam in similique. Soluta eligendi reiciendis fugiat officia iste iusto quidem doloribus quod dolore at, ipsum quisquam ea temporibus architecto nemo quo exercitationem corrupti fuga. Delectus fugiat optio cumque adipisci, ab omnis quia facilis! Minus porro consequuntur commodi soluta dignissimos laboriosam deleniti! Impedit quasi totam quas numquam vero molestias sed, ad corrupti, culpa, sunt sapiente, quo sit obcaecati.</p>
-											</div>
-										<!-- <div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Save changes</button>
-										</div> -->
-									</div>
-								</div>
-							</div>
-							
-							<img class="img-fluid" src="https://placebear.com/g/410/320">
-						</div>
-						<div class="portfolio-text">
-							<h3>Work Title</h3>
-							<a data-toggle="modal" data-target="#modalWork1" href="#">Work link</a>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="img-wrapper d-flex justify-content-center align-items-center" >
-							<button type="button" class="btn btn-outline-main portfolio-btn" data-toggle="modal" data-target="#modalWork1">Look</button>
-							<!-- Modal -->
-							<div class="modal fade" id="modalWork1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body">
-											<img class="img-fluid" src="https://placebear.com/g/820/640">
-											<h3>Work Title</h3>
-											<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis, officiis aliquid earum ipsa omnis ducimus laborum vero rem porro dignissimos eveniet molestiae aliquam in similique. Soluta eligendi reiciendis fugiat officia iste iusto quidem doloribus quod dolore at, ipsum quisquam ea temporibus architecto nemo quo exercitationem corrupti fuga. Delectus fugiat optio cumque adipisci, ab omnis quia facilis! Minus porro consequuntur commodi soluta dignissimos laboriosam deleniti! Impedit quasi totam quas numquam vero molestias sed, ad corrupti, culpa, sunt sapiente, quo sit obcaecati.</p>
-										</div>
-										<!-- <div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Save changes</button>
-										</div> -->
-									</div>
-								</div>
-							</div>
-							
-							<img class="img-fluid" src="https://placebear.com/g/410/320">
-						</div>
-						<div class="portfolio-text">
-							<h3>Work Title</h3>
-							<a data-toggle="modal" data-target="#modalWork1" href="#">Work link</a>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="img-wrapper d-flex justify-content-center align-items-center" >
-							<button type="button" class="btn btn-outline-main portfolio-btn" data-toggle="modal" data-target="#modalWork1">Look</button>
-							<!-- Modal -->
-							<div class="modal fade" id="modalWork1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body">
-											<img class="img-fluid" src="https://placebear.com/g/820/640">
-											<h3>Work Title</h3>
-											<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis, officiis aliquid earum ipsa omnis ducimus laborum vero rem porro dignissimos eveniet molestiae aliquam in similique. Soluta eligendi reiciendis fugiat officia iste iusto quidem doloribus quod dolore at, ipsum quisquam ea temporibus architecto nemo quo exercitationem corrupti fuga. Delectus fugiat optio cumque adipisci, ab omnis quia facilis! Minus porro consequuntur commodi soluta dignissimos laboriosam deleniti! Impedit quasi totam quas numquam vero molestias sed, ad corrupti, culpa, sunt sapiente, quo sit obcaecati.</p>
-										</div>
-										<!-- <div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Save changes</button>
-										</div> -->
-									</div>
-								</div>
-							</div>
-							
-							<img class="img-fluid" src="https://placebear.com/g/410/320">
-						</div>
-						<div class="portfolio-text">
-							<h3>Work Title</h3>
-							<a data-toggle="modal" data-target="#modalWork1" href="#">Work link</a>
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</section>
 
+		<section class="portfolio">
+			<div class="row">
+				<div class="col">
+					<h2>Feature Work</h2>
+				</div>
+			</div>
+			<div class="portfolio-content">
+				<div class="row text-center">
+					<div class="col-sm-4">
 
-
-		<div class="owl-container">
-			<div class="owl-carousel owl-theme owl-loaded owl-drag">
-
-
-				<div class="carousel-item owl-item">
-					<div class="img-wrapper d-flex justify-content-center align-items-center" >
-						<button type="button" class="btn btn-outline-main portfolio-btn" data-toggle="modal" data-target="#modalWork1">Look</button>
-						<!-- Modal -->
-						<div class="modal fade" id="modalWork1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
+						<div class="img-wrapper d-flex justify-content-center align-items-center" >
+							<button type="button" class="btn btn-outline-main portfolio-btn" data-toggle="modal" data-target="#modalWork1">Look</button>
+							<!-- Modal -->
+							<div class="modal fade" id="modalWork1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<img class="img-fluid" src="https://placebear.com/g/820/640">
+											<h3>Work Title</h3>
+											<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis, officiis aliquid earum ipsa omnis ducimus laborum vero rem porro dignissimos eveniet molestiae aliquam in similique. Soluta eligendi reiciendis fugiat officia iste iusto quidem doloribus quod dolore at, ipsum quisquam ea temporibus architecto nemo quo exercitationem corrupti fuga. Delectus fugiat optio cumque adipisci, ab omnis quia facilis! Minus porro consequuntur commodi soluta dignissimos laboriosam deleniti! Impedit quasi totam quas numquam vero molestias sed, ad corrupti, culpa, sunt sapiente, quo sit obcaecati.</p>
+										</div>
+										<!-- <div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div> -->
 									</div>
-									<div class="modal-body">
-										<img class="img-fluid" src="https://placebear.com/g/820/640">
-										<h3>Work Title</h3>
-										<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis, officiis aliquid earum ipsa omnis ducimus laborum vero rem porro dignissimos eveniet molestiae aliquam in similique. Soluta eligendi reiciendis fugiat officia iste iusto quidem doloribus quod dolore at, ipsum quisquam ea temporibus architecto nemo quo exercitationem corrupti fuga. Delectus fugiat optio cumque adipisci, ab omnis quia facilis! Minus porro consequuntur commodi soluta dignissimos laboriosam deleniti! Impedit quasi totam quas numquam vero molestias sed, ad corrupti, culpa, sunt sapiente, quo sit obcaecati.</p>
+								</div>
+							</div>
+							
+							<img class="img-fluid" src="https://placebear.com/g/410/320">
+						</div>
+						<div class="portfolio-text">
+							<h3>Work Title</h3>
+							<a data-toggle="modal" data-target="#modalWork1" href="#">Work link</a>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="img-wrapper d-flex justify-content-center align-items-center" >
+							<button type="button" class="btn btn-outline-main portfolio-btn" data-toggle="modal" data-target="#modalWork1">Look</button>
+							<!-- Modal -->
+							<div class="modal fade" id="modalWork1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<img class="img-fluid" src="https://placebear.com/g/820/640">
+											<h3>Work Title</h3>
+											<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis, officiis aliquid earum ipsa omnis ducimus laborum vero rem porro dignissimos eveniet molestiae aliquam in similique. Soluta eligendi reiciendis fugiat officia iste iusto quidem doloribus quod dolore at, ipsum quisquam ea temporibus architecto nemo quo exercitationem corrupti fuga. Delectus fugiat optio cumque adipisci, ab omnis quia facilis! Minus porro consequuntur commodi soluta dignissimos laboriosam deleniti! Impedit quasi totam quas numquam vero molestias sed, ad corrupti, culpa, sunt sapiente, quo sit obcaecati.</p>
+										</div>
+										<!-- <div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div> -->
 									</div>
+								</div>
+							</div>
+							
+							<img class="img-fluid" src="https://placebear.com/g/410/320">
+						</div>
+						<div class="portfolio-text">
+							<h3>Work Title</h3>
+							<a data-toggle="modal" data-target="#modalWork1" href="#">Work link</a>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="img-wrapper d-flex justify-content-center align-items-center" >
+							<button type="button" class="btn btn-outline-main portfolio-btn" data-toggle="modal" data-target="#modalWork1">Look</button>
+							<!-- Modal -->
+							<div class="modal fade" id="modalWork1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<img class="img-fluid" src="https://placebear.com/g/820/640">
+											<h3>Work Title</h3>
+											<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis, officiis aliquid earum ipsa omnis ducimus laborum vero rem porro dignissimos eveniet molestiae aliquam in similique. Soluta eligendi reiciendis fugiat officia iste iusto quidem doloribus quod dolore at, ipsum quisquam ea temporibus architecto nemo quo exercitationem corrupti fuga. Delectus fugiat optio cumque adipisci, ab omnis quia facilis! Minus porro consequuntur commodi soluta dignissimos laboriosam deleniti! Impedit quasi totam quas numquam vero molestias sed, ad corrupti, culpa, sunt sapiente, quo sit obcaecati.</p>
+										</div>
+										<!-- <div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div> -->
+									</div>
+								</div>
+							</div>
+							
+							<img class="img-fluid" src="https://placebear.com/g/410/320">
+						</div>
+						<div class="portfolio-text">
+							<h3>Work Title</h3>
+							<a data-toggle="modal" data-target="#modalWork1" href="#">Work link</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="owl-container">
+				<div class="owl-carousel owl-theme owl-loaded owl-drag">
+
+
+					<div class="carousel-item owl-item">
+						<div class="img-wrapper d-flex justify-content-center align-items-center" >
+							<button type="button" class="btn btn-outline-main portfolio-btn" data-toggle="modal" data-target="#modalWork1">Look</button>
+							<!-- Modal -->
+							<div class="modal fade" id="modalWork1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<img class="img-fluid" src="https://placebear.com/g/820/640">
+											<h3>Work Title</h3>
+											<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus nulla obcaecati blanditiis unde possimus quod id, quis. Consequatur molestias, quod, debitis inventore modi voluptas eius architecto repellendus quis, officiis aliquid earum ipsa omnis ducimus laborum vero rem porro dignissimos eveniet molestiae aliquam in similique. Soluta eligendi reiciendis fugiat officia iste iusto quidem doloribus quod dolore at, ipsum quisquam ea temporibus architecto nemo quo exercitationem corrupti fuga. Delectus fugiat optio cumque adipisci, ab omnis quia facilis! Minus porro consequuntur commodi soluta dignissimos laboriosam deleniti! Impedit quasi totam quas numquam vero molestias sed, ad corrupti, culpa, sunt sapiente, quo sit obcaecati.</p>
+										</div>
 										<!-- <div class="modal-footer">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 											<button type="button" class="btn btn-primary">Save changes</button>
@@ -667,51 +683,57 @@
 				</div>
 			</div>
 
+		</section>
 
 
-			<footer class="footer">
-				<div class="contacts">
-					<div class="row">
-						<div class="col-6">
+
+		
+
+
+
+		<footer class="footer">
+			<div class="contacts">
+				<div class="row">
+					<div class="col-6">
+						<ul>
+							<li>Rybinsk, Russia</li>
+							<li>+7 (905) 63 444 67</li>
+							<li><a href="#">dandgerson@gmail.com</a></li>
+						</ul>
+					</div>
+					<div class="col-6 text-right">
+						<div class="social">
 							<ul>
-								<li>Rybinsk, Russia</li>
-								<li>+7 (905) 63 444 67</li>
-								<li><a href="#">dandgerson@gmail.com</a></li>
+								<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
-						<div class="col-6 text-right">
-							<div class="social">
-								<ul>
-									<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="copyrigth">
-					<div class="row">
-						<div class="col">
-							
-							<p><i class="fa fa-copyright"></i>dandgerson 2017</p>
-						</div>
+			<div class="copyrigth">
+				<div class="row">
+					<div class="col">
+
+						<p><i class="fa fa-copyright"></i>dandgerson 2017</p>
 					</div>
 				</div>
-			</footer>
+			</div>
+		</footer>
 
-		</div>
+	</div>
 
-		<!-- JS Plugins -->
-		<script src="js/libs.min.js"></script>
+	<!-- JS Plugins -->
+	<script src="js/libs.min.js"></script>
 
-		<!-- Custom JS -->
-		<script src="js/main.js"></script>
+	<!-- Custom JS -->
+	<script src="js/main.js"></script>
 
-		<!-- JQuery test script -->
-		<!-- <script src="js/jQueryTest.js"></script> -->
+	<!-- JQuery test script -->
+	<!-- <script src="js/jQueryTest.js"></script> -->
 
-	</body>
-	</html>
+</body>
+</html>

@@ -23,8 +23,7 @@ header .social {
 }
 
 .main-img {
-	margin-top: 2.1rem;
-	margin: 2.1rem -15px 0 -15px;
+	margin: 1.4rem -15px 0 -15px;
 }
 
 .jumbotron {
@@ -32,9 +31,13 @@ header .social {
 		height: 2px;
 	}
 
-	.jumbotron-control a {
-		margin-right: 0.4rem;
-	}
+	.jumbotron-control {
+		margin-top: 2rem;
+
+		button {
+			margin-right: 0.4rem;
+		}
+	} 
 }
 
 
@@ -50,6 +53,10 @@ header .social {
 
 .modal-body p {
 	text-indent: 2rem;
+}
+
+.form-group {
+	margin: 0 2rem 1rem 2rem;
 }
 
 .social {

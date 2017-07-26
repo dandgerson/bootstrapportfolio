@@ -1,14 +1,16 @@
 @import "bourbon";
 
 // color theme
-$color-text-main: #312160;
-$color-text-main-rgba: rgba(49, 33, 96, 0.7);
-$color-text-second: #7E60AA;
+$color-text-main: #494A00;
+$color-text-main-rgba: rgba(73, 74, 0, 0.7);
+$color-text-second: #979800;
 $color-accent: #F8981C;
-$color-bg-main: #A46FB5;
-$color-bg-main-rgba: rgba(164, 111, 181, 0.3);
-$color-bg-first: #DECAE6;
-$color-bg-second: #312160;
+$color-bg-main: #C8CA00;
+$color-bg-main-rgba: rgba(200, 202, 0, 0.3);
+$color-bg-first: #F6F89C;
+$color-bg-second: #494A00;
+$color-bg-light: #F7F8CD;
+
 
 body {
 	background: $color-bg-main;
@@ -46,6 +48,10 @@ h4 {
 
 h2 {
 	color: $color-text-second;
+}
+
+.jumbotron {
+	background-color: $color-bg-light;
 }
 
 .blockquote, .blockquote-reverse {

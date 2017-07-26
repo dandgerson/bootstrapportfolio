@@ -169,15 +169,18 @@ header .social a {
 }
 
 .main-img {
-  margin-top: 2.1rem;
-  margin: 2.1rem -15px 0 -15px;
+  margin: 1.4rem -15px 0 -15px;
 }
 
 .jumbotron hr {
   height: 2px;
 }
 
-.jumbotron .jumbotron-control a {
+.jumbotron .jumbotron-control {
+  margin-top: 2rem;
+}
+
+.jumbotron .jumbotron-control button {
   margin-right: 0.4rem;
 }
 
@@ -192,6 +195,10 @@ header .social a {
 
 .modal-body p {
   text-indent: 2rem;
+}
+
+.form-group {
+  margin: 0 2rem 1rem 2rem;
 }
 
 .social ul, .social li {
@@ -368,6 +375,37 @@ h2 {
   color: #fff;
   background-color: #7E60AA;
   border-color: #7E60AA;
+}
+
+.btn-main {
+  color: #fff;
+  background-color: #7E60AA;
+  border-color: #7E60AA;
+}
+
+.btn-main:hover {
+  color: #fff;
+  background-color: #312160;
+  border-color: #312160;
+}
+
+.btn-main:focus, .btn-main.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+  box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+}
+
+.btn-main.disabled, .btn-main:disabled {
+  color: #312160;
+  background-color: transparent;
+  border-color: #312160;
+}
+
+.btn-main:active, .btn-main.active,
+.show > .btn-main.dropdown-toggle {
+  color: #fff;
+  background-color: #312160;
+  background-image: none;
+  border-color: #312160;
 }
 
 .footer {
