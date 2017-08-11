@@ -8,6 +8,17 @@
 			margin-top: 1.5rem;
 		}
 	}
+
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 90%;
+			left: 47%;
+		}
+	}
+
+
 }
 
 /* Large Devices, Desktops */
@@ -16,6 +27,15 @@
 		h1 {
 			font-size: 3.2rem;
 			margin-top: 1.5rem;
+		}
+	}
+
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 90%;
+			left: 46%;
 		}
 	}
 }
@@ -28,6 +48,16 @@
 			margin-top: 1.5rem;
 		}
 	}
+
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 90%;
+			left: 44%;
+		}
+	}
+
 }
 
 /* Small Devices, Phones */
@@ -41,6 +71,16 @@
 			font-size: 1.2rem;
 		}
 	}
+
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 88%;
+			left: 43%;
+		}
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -67,6 +107,15 @@
 
 	hr {
 		height: 3px;
+	}
+
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 86%;
+			left: 39%;
+		}
 	}
 
 	.jumbotron-control a:nth-child(1) {
@@ -108,7 +157,43 @@
 	}
 }
 
-/* Custom, iPhone Retina */
+/* Custom, Nexus 5X */
+@media only screen and (max-width : 416px) {
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 84%;
+			left: 42%;
+		}
+	}
+}
+
+/* Custom, IPhone 6 */
+@media only screen and (max-width : 377px) {
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 83%;
+			left: 40%;
+		}
+	}
+}
+
+/* Custom, Galaxy S5 */
+@media only screen and (max-width : 362px) {
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 83%;
+			left: 39%;
+		}
+	}
+}
+
+/* Custom, iPhone 4 Retina */
 @media only screen and (max-width : 320px) {
 	.header {
 		.social a {
@@ -132,6 +217,15 @@
 
 	hr {
 		height: 3px;
+	}
+
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 83%;
+			left: 38%;
+		}
 	}
 
 	.jumbotron-control a:nth-child(1) {
@@ -205,5 +299,12 @@
 
 /* Extra Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	header {
+		.owl-theme .owl-nav.disabled+.owl-dots {
+			margin: 0px;
+			position: absolute;
+			top: 93%;
+			left: 49%;
+		}
+	}
 }

@@ -10,14 +10,14 @@ $(document).ready(function(){
 		smartSpeed: 950,
 
 	});
-	owlHeader.on('mousewheel', '.owl-stage', function (e) {
-		if (e.deltaY > 0) {
-			owlHeader.trigger('next.owl');
-		} else {
-			owlHeader.trigger('prev.owl');
-		}
-		e.preventDefault();
-	});
+	// owlHeader.on('mousewheel', '.owl-stage', function (e) {
+	// 	if (e.deltaY > 0) {
+	// 		owlHeader.trigger('next.owl');
+	// 	} else {
+	// 		owlHeader.trigger('prev.owl');
+	// 	}
+	// 	e.preventDefault();
+	// });
 
 
 
