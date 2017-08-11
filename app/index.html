@@ -30,14 +30,18 @@
 	<meta name="keywords" content="...">
 	<meta name="autor" content="dandgerson dandgerson@gmail.com">
 	<!-- Coded by dandgerson@gmail.com, https://www.facebook.com/dandgerson -->
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- Libs CSS -->
 	<link rel="stylesheet" href="css/libs.min.css">
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/main.css">
+	<link id="theme" rel="stylesheet" href="css/themes/theme-default.css">
 
-	<!-- Fonts -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet"> -->
 
@@ -84,14 +88,31 @@
 				</div>
 			</div>
 
+		<div class="owl-container">
+			<div id="headerCarousel" class="owl-carousel owl-theme">
+				<div id="imgPurple" class="owl-item">
+					<img src="img/bg-main.png" alt="">
+				</div>
+				<div id="imgYellow" class="owl-item">
+					<img src="img/bg-main-yellow.png" alt="">
+				</div>
+				<div id="imgBlue" class="owl-item">
+					<img src="img/bg-main-blue.png" alt="">
+				</div>
+
+			</div>
+		</div>
+
 		</header>
 
-
+<!-- <button class="btn btn-outline-main" id="toYellow" onclick="changeThemeToYellow()">to yellow</button>
+<button class="btn btn-outline-main" id="toBlue" onclick="changeThemeToBlue()">to blue</button>
+<button class="btn btn-outline-main" id="toPurple" onclick="changeThemeToPurple()">to purple</button> -->
 
 		<section class="main-content">
 			<div class="row">
 				<div class="col">
-					<img class="img-fluid" src="img/bg-main.png">
+					<!-- <img class="img-fluid" src="img/bg-main.png"> -->
 					<div class="jumbotron">
 						<h1 class="display-3">Hello!</h1>
 						<blockquote class="blockquote">
@@ -291,7 +312,7 @@
 			</div>
 
 			<div class="owl-container">
-				<div class="owl-carousel owl-theme owl-loaded owl-drag">
+				<div id="portfolioCarousel" class="owl-carousel owl-theme owl-loaded owl-drag">
 
 
 					<div class="carousel-item owl-item">

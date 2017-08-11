@@ -130,17 +130,21 @@ h4 {
 /* --------------------------------------------------------
 	_components.scss
 	-------------------------------------------------------- */
-.owl-container {
+header .owl-container {
+  margin: 1.4rem -15px 0 -15px;
+}
+
+.portfolio .owl-container {
   margin: 0 -15px 0 -15px;
 }
 
-.carousel-item {
+.portfolio .owl-container .carousel-item {
   margin-top: 1.2rem;
   padding: 0 15px 0 15px;
   text-align: center;
 }
 
-.carousel-item img {
+.portfolio .owl-container .carousel-item img {
   -webkit-border-radius: 3px;
           border-radius: 3px;
 }
@@ -157,6 +161,15 @@ h4 {
   width: 120px;
 }
 
+h1 {
+  text-shadow: 2px 3px 3px black;
+}
+
+h2,
+h3 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
 header .social ul, header .social li {
   list-style-type: none;
   display: inline-block;
@@ -169,7 +182,7 @@ header .social a {
 }
 
 .main-content {
-  margin: 1.4rem -15px 0 -15px;
+  margin: 0 -15px 0 -15px;
 }
 
 .jumbotron hr {
@@ -358,6 +371,8 @@ h2 {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   cursor: pointer;
+  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
 }
 
 .btn-outline-main:focus, .btn-outline-main.focus {
@@ -387,6 +402,8 @@ h2 {
   color: #fff;
   background-color: #312160;
   border-color: #312160;
+  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
 }
 
 .btn-main:focus, .btn-main.focus {

@@ -132,6 +132,7 @@ h2 {
 	border-color: $color-text-second;
 	transition: all 0.3s linear;
 	cursor: pointer;
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
 }
 
 .btn-outline-main:focus, .btn-outline-main.focus {
@@ -161,6 +162,7 @@ h2 {
 	color: #fff;
 	background-color: $color-bg-second;
 	border-color: $color-bg-second;
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
 }
 
 .btn-main:focus, .btn-main.focus {

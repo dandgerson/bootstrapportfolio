@@ -9,6 +9,15 @@
 	}
 }
 
+h1 {
+	text-shadow: 2px 3px 3px black;
+}
+
+h2,
+h3 {
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
 header .social {
 	ul, li {
 		list-style-type: none;
@@ -23,7 +32,7 @@ header .social {
 }
 
 .main-content {
-	margin: 1.4rem -15px 0 -15px;
+	margin: 0 -15px 0 -15px;
 }
 
 .jumbotron {

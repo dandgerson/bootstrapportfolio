@@ -7966,6 +7966,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 /* --------------------------------------------------------
 	Custom application specific styles
 	-------------------------------------------------------- */
+.bootstrap-carousel-container .carousel-item-next,
+.bootstrap-carousel-container .carousel-item-prev,
+.bootstrap-carousel-container .carousel-item.active {
+  display: block;
+}
+
 /**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 David Deutsch
