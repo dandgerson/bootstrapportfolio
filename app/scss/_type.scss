@@ -7,7 +7,7 @@ $lato-light: "Lato-Light", sans-serif;
 $lato-regular: "Lato-Regular", sans-serif;
 $lato-bold: "Lato-Bold", sans-serif;
 
-@include font-face("Lato-Hairline", "../fonts/lato/Lato-Hairline", $file-formats: ttf);
+@include font-face("Lato-Hairline", "../fonts/lato/Lato-Hairline.ttf");
 
 @include font-face("Lato-Light", "../fonts/lato/Lato-Light", $file-formats: ttf);
 
