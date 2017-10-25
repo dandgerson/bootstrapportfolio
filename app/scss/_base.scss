@@ -1,0 +1,98 @@
+/*_base.scss*/
+
+.logo {
+  margin-top: 1rem;
+  svg {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+h1 {
+  text-shadow: 2px 3px 3px black;
+}
+
+h2,
+h3 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+header .social {
+  ul, li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  a {
+    display: block;
+    margin: 0.2rem 0 0 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.main-content {
+  margin: 0 -15px 0 -15px;
+}
+
+.jumbotron {
+  hr {
+    height: 2px;
+  }
+
+  .jumbotron-control {
+    margin-top: 2rem;
+
+    button {
+      margin-right: 0.4rem;
+    }
+  } 
+}
+
+
+
+
+.portfolio-content {
+  margin-top: 1.2rem;
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.modal-body p {
+  text-indent: 2rem;
+}
+
+.form-group {
+  margin: 0 2rem 1rem 2rem;
+}
+
+.social {
+  ul, li {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    margin-left: 0.5rem;
+    font-size: 2rem;
+  }
+}
+
+.footer {
+  margin: 2.3rem -15px 0 -15px;
+  padding: 0 15px 0 15px;
+
+  .contacts {
+    padding: 1rem 0 0 0;
+  }
+
+  ul, li {
+    list-style-type: none;
+  }
+
+  .copyrigth {
+    padding: 1rem 0 0 0;
+  }
+}

@@ -1,0 +1,29 @@
+// Syntax example
+// @mixin border-radius($radius) {
+//   -webkit-border-radius: $radius;
+//   -moz-border-radius: $radius;
+//   -ms-border-radius: $radius;
+//   border-radius: $radius;
+// }
+
+// .box { @include border-radius(10px); }
+
+@mixin font-face(
+  $font-family,
+  $file-path,
+  $weight: normal,
+  $style: normal,
+  $file-formats: eot woff2 woff ttf svg) {
+
+  @font-face {
+    font-family: $font-family;
+    font-style: $style;
+    font-weight: $weight;
+
+    src: font-source-declaration(
+      $font-family,
+      $file-path,
+      $file-formats
+      );
+  }
+}

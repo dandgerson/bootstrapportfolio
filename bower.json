@@ -1,22 +1,26 @@
 {
-  "name": "bootstrapportfolio",
-  "description": "",
-  "main": "gulpfile.js",
+  "name": "template",
+  "description": "workflow gulp-template for a new project",
+  "main": "index.js",
   "authors": [
     "dandgerson"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/dandgerson/bootstrapportfolio",
+  "license": "MIT",
+  "keywords": [
+    "template",
+    "workflow",
+    "gulp"
+  ],
+  "homepage": "https://github.com/dandgerson/template",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "app/bower",
     "test",
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.6",
+    "bootstrap": "v4.0.0-beta",
     "owl.carousel": "owl-carousel2#^2.2.1",
     "jquery-mousewheel": "^3.1.13"
   }
