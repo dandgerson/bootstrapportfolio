@@ -31,13 +31,9 @@ header {
         border: 1px solid transparent;
         transition: all .1s ease-in-out;
         color: #fff;
-        background-color: #7E60AA;
-        border-color: #7E60AA;
         &:hover {
           text-decoration: none;
           color: #fff;
-          background-color: #312160;
-          border-color: #312160;
           box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
         }
       }
