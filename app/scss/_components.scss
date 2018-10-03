@@ -1,4 +1,5 @@
 /*_components.scss*/
+
 header {
   .owl-container {
     margin: 1.4rem -15px 0 -15px;
@@ -16,7 +17,30 @@ header {
         border-radius: 3px;
       }
     }
+    .owl-nav {
+      button {
+        width: 30px;
+        height: 30px;
+  
+        display: inline-block;
+        font-weight: bolder;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        transition: all .1s ease-in-out;
+        color: #fff;
+        background-color: #7E60AA;
+        border-color: #7E60AA;
+        &:hover {
+          text-decoration: none;
+          color: #fff;
+          background-color: #312160;
+          border-color: #312160;
+          box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
   }
 }
-
-
